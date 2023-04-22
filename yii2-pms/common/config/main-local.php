@@ -3,9 +3,7 @@
 use JetBrains\PhpStorm\Language;
 
 return [
-    'charset' => 'UTF-8',
-    'language'=> 'th-TH',
-    'sourceLanguage'=> 'th-TH',
+    
     'components' => [
         'db' => [
             'class' => \yii\db\Connection::class,
