@@ -2,3 +2,48 @@
 **/logs
 *.log
 data/mysql
+
+## Yii 
+# yii console commands
+yii2-pms/yii
+yii2-pms/yii_test
+yii2-pms/yii_test.bat
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+yii2-pms/phpunit.xml
+
+# vagrant runtime
+yii2-pms/.vagrant
+
+# ignore generated files
+yii2-pms/frontend/web/index.php
+yii2-pms/frontend/web/index-test.php
+yii2-pms/frontend/web/robots.txt
+yii2-pms/backend/web/index.php
+yii2-pms/backend/web/index-test.php
+yii2-pms/backend/web/robots.txt

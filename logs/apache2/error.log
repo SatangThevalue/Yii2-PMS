@@ -14,3 +14,11 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00112: Warning: DocumentRoot [/var/www/html/frontend/web] does not exist
 AH00112: Warning: DocumentRoot [/var/www/html/backend/web] does not exist
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 22 05:21:09.873979 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.1.18 OpenSSL/1.1.1n configured -- resuming normal operations
+[Sat Apr 22 05:21:09.878109 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 22 05:31:37.229764 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00112: Warning: DocumentRoot [/var/www/html/frontend/web] does not exist
+AH00112: Warning: DocumentRoot [/var/www/html/backend/web] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 22 05:31:39.911653 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.1.18 OpenSSL/1.1.1n configured -- resuming normal operations
+[Sat Apr 22 05:31:39.912124 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
