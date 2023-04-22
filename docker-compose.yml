@@ -75,3 +75,14 @@ services:
     restart: always
     ports:
       - "127.0.0.1:${HOST_MACHINE_REDIS_PORT}:6379"
+  
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    container_name: "${COMPOSE_PROJECT_NAME}-redisinsight"
+    restart: always
+    links:
+      - redis
+    ports:
+      - '8001:8001'
+    volumes:
+      - ./data/redisinsight:/db 

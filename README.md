@@ -104,3 +104,4 @@ See also the list of [contributors](https://github.com/kylelobo/The-Documentatio
 
 - [BIG DATA RMUTT - Yii2 By Pongpon Nilaphruek](https://www.bigdata.rmutt.ac.th/?tag=yii2)
 - [Yii2 Guide](https://www.yiiframework.com/doc/guide/2.0/en)
+- [AdminLTE Theme](https://www.programmerthailand.com/tutorial/view/extension-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-theme-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-yii2-adminlte-theme/94)
