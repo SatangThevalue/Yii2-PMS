@@ -1,12 +1,17 @@
 <?php
 
+use JetBrains\PhpStorm\Language;
+
 return [
+    'charset' => 'UTF-8',
+    'language'=> 'th-TH',
+    'sourceLanguage'=> 'th-TH',
     'components' => [
         'db' => [
             'class' => \yii\db\Connection::class,
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=database;prot=3306;dbname=pms',
             'username' => 'root',
-            'password' => '',
+            'password' => '123456789',
             'charset' => 'utf8',
         ],
         'mailer' => [
