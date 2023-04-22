@@ -34,7 +34,7 @@ services:
     ##build:
     ##  context: "./bin/${DATABASE}"
     image: mysql:5.7
-    container_name: "${COMPOSE_PROJECT_NAME}-${DATABASE}"
+    container_name: "${COMPOSE_PROJECT_NAME}-mysql57"
     restart: "always"
     ports:
       - "127.0.0.1:${HOST_MACHINE_MYSQL_PORT}:3306"
