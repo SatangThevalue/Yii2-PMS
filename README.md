@@ -49,6 +49,12 @@ This project was built in php using a yii2 framework.
 
  - PHP 5.4.0 or higher is required.
  - MySQL
+ - Add Hosts In Windows or run ' Add Hosts ' in Project
+```
+127.0.0.1 db.pms.local
+127.0.0.1 admin.pms.local
+127.0.0.1 pms.local
+```
 
 ### Installing | การติดตั้ง
 

@@ -31,3 +31,4 @@ pms.local:80 172.18.0.1 - - [21/Apr/2023:16:58:23 +0000] "GET /assets/383980d4/d
 admin.pms.local:80 172.19.0.1 - - [22/Apr/2023:05:27:49 +0000] "GET / HTTP/1.1" 404 494 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 admin.pms.local:80 172.19.0.1 - - [22/Apr/2023:05:27:52 +0000] "GET / HTTP/1.1" 404 493 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 admin.pms.local:80 172.19.0.1 - - [22/Apr/2023:05:27:52 +0000] "GET /favicon.ico HTTP/1.1" 404 494 "http://admin.pms.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+db.pms.local:80 172.19.0.1 - - [22/Apr/2023:05:34:07 +0000] "GET / HTTP/1.1" 301 567 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
