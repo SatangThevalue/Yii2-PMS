@@ -45,7 +45,8 @@ class DashboardController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]); */
-        return $this->render('dashboard');
+        $model = new Dashboard();
+        return $this->render('dashboard',['model' => $model]);
     }
 
     /**

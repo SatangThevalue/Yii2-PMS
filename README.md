@@ -18,6 +18,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
+- [Modules in the project](#modules)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
 - [Usage](#usage)
@@ -40,7 +41,18 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
 
 <img src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/294737392_391632463063442_5752770952954949927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFdsBJs34R9Fhl9LuQwZqbq14dEbj9I16XXh0RuP0jXpbO4NmAXtTf_Mu99cEInhTyyKHpN8DS0quVBQjlZ4E2a&_nc_ohc=-YxxJy3oAwsAX_kFJWP&_nc_ht=scontent.fbkk29-8.fna&oh=00_AfC5Q-4u6WSD175-o1_YSi5o5qnoaG04cQJuNvytcRHZ6A&oe=644714CA"  width="150" height="150">
 </div>
-
+###  Modules in the project | โมดูลในโปรเจกต์ <a name = "modules"></a><br>
+ - Dashboard | ภาพรวม <br>
+ [![Status](https://img.shields.io/badge/status-active-success.svg)]() <br>
+ - Expenses | รายรับรายจ่าย <br>
+ - Statement | งบการเงิน<br>
+ - Investment | การลงทุน<br>
+ - Calendar | ปฏิทิน<br>
+ - Learning | การเรียน<br>
+ - To Do List | สิ่งที่ต้องทำ<br>
+ - Working | การทำงาน<br>
+ - Treasurer | งานเหรัญญิก<br>
+<br>
 ### 🏁 Getting Started | เริ่มต้นใช้งาน <a name = "getting_started"></a>
 
 This project was built in php using a yii2 framework. 
@@ -104,4 +116,5 @@ See also the list of [contributors](https://github.com/kylelobo/The-Documentatio
 
 - [BIG DATA RMUTT - Yii2 By Pongpon Nilaphruek](https://www.bigdata.rmutt.ac.th/?tag=yii2)
 - [Yii2 Guide](https://www.yiiframework.com/doc/guide/2.0/en)
+- [Yii Framework 2 (Yii2) by Programmerthailand](https://www.programmerthailand.com/tutorial/category/yii-framework-2-%28yii2%29/1)
 - [AdminLTE Theme](https://www.programmerthailand.com/tutorial/view/extension-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-theme-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-yii2-adminlte-theme/94)
