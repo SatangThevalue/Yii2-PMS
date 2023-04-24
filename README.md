@@ -43,7 +43,7 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
 </div>
 ###  Modules in the project | โมดูลในโปรเจกต์ <a name = "modules"></a><br>
  - Dashboard | ภาพรวม <br>
- <div align="center">[![Status](https://geps.dev/progress/10)]() <br></div>
+ <div align="center">![](https://geps.dev/progress/10)<br></div>
  - Expenses | รายรับรายจ่าย <br>
  - Statement | งบการเงิน<br>
  - Investment | การลงทุน<br>
