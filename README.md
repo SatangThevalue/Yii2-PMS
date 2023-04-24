@@ -33,7 +33,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/th/thumb/6/63/RMUTT-logo-01.png/230px-RMUTT-logo-01.png"  width="229" height="85">
 
 This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
-<b>INSTRUCTOR : </b>[Assistant ProfessorPongpon Nilaphruek](https://www.linkedin.com/in/pongpon-nilaphruek-01a30335/)<br>
+<b>INSTRUCTOR : </b>[Assistant Professor Pongpon Nilaphruek](https://www.linkedin.com/in/pongpon-nilaphruek-01a30335/)<br>
 <b>NAME :	</b>[Mr.THANAPHOL NANTAKASET](https://www.linkedin.com/in/satangthevalue/)<br>
 <b>FACULTY :</b>	Science and Technology<br>
 <b>PROGRAM :</b>	Big Data Management and Analytics 65 <br>
