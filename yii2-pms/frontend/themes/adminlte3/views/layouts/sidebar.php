@@ -34,6 +34,7 @@
         <nav class="mt-2">
             <?php
             echo \hail812\adminlte\widgets\Menu::widget([
+                // TODO(SaTangTheValue): add Menu
                 'items' => [
                     [
                         'label' => 'Dashboard | ภาพรวม',
