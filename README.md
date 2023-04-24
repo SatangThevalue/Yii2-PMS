@@ -136,7 +136,8 @@ You can use it with a web server emulator.<br>
  - [XAMPP](https://www.apachefriends.org/) - Web Server 
  - [PHP : Hypertext Preprocessor](https://www.php.net/) - Web Server 
  - [NGINX : Advanced Load Balancer, Web Server, & Reverse Proxy](https://www.nginx.com/) - Web Server 
- - [Docker](https://www.docker.com/) - manage containers
+ - [Docker](https://www.docker.com/) - manage containers 
+ <b><-- Developer Active</b>
 
 ## 🚀 Deployment | การปรับใช้ <a name = "deployment"></a>
 
