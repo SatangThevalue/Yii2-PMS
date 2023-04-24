@@ -34,58 +34,58 @@
         <nav class="mt-2">
             <?php
             echo \hail812\adminlte\widgets\Menu::widget([
-                // TODO(SaTangTheValue): add Menu
+                // TODO(SaTangTheValue): add Menu and add icon Menu
                 'items' => [
                     [
                         'label' => 'Dashboard | ภาพรวม',
-                        'icon' => 'fa-solid fa-chart-line',
+                        'icon' => 'chart-line',
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Expenses | รายรับรายจ่าย',
-                        'icon' => 'fa-duotone fa-money-bill',
+                        'icon' => 'money-bill',
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Statement | งบการเงิน',
-                        'icon' => 'fa-money-check-dollar',
-                        ##<i class="fa-solid fa-money-check-dollar"></i>
+                        'icon' => 'dollar-sign',
+                        ##<i class="fad fa-dollar-sign"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Investment | การลงทุน',
-                        'icon' => 'fa-solid fa-display-chart-up-circle-dollar',
-                        ##<i class="fa-sharp fa-solid fa-display-chart-up-circle-dollar"></i>
+                        'icon' => 'hand-holding-usd',
+                        ##<i class="fas fa-hand-holding-usd"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Calendar | ปฏิทิน',
-                        'icon' => 'fa-calendar-days',
-                        ##<i class="fa-duotone fa-calendar-days"></i>
+                        'icon' => 'calendar-alt',
+                        ##<i class="fas fa-calendar-alt"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Learning | การเรียน',
-                        'icon' => 'fa-duotone fa-graduation-cap',
+                        'icon' => 'graduation-cap',
                         ##<i class="fa-duotone fa-graduation-cap"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'To Do List | สิ่งที่ต้องทำ',
-                        'icon' => 'fa-solid fa-list-check',
-                        ##<i class="fa-solid fa-list-check"></i>
+                        'icon' => 'clipboard-list',
+                        ##<i class="fas fa-clipboard-list"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Working | การทำงาน',
-                        'icon' => 'fa-duotone fa-briefcase',
+                        'icon' => 'briefcase',
                         ##<i class="fa-duotone fa-briefcase"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Treasurer | งานเหรัญญิก',
-                        'icon' => 'fa-duotone fa-treasure-chest',
-                        ##<i class="fa-duotone fa-treasure-chest"></i>
+                        'icon' => 'balance-scale',
+                        ##<i class="fas fa-balance-scale"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     /*[
