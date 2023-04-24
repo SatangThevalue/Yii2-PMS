@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="site/index" class="brand-link">
        <!--  <img src="<?= $assetDir ?>/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
         <span class="brand-text font-weight-light"><?php echo Yii::$app->name ?></span>
     </a>
@@ -37,47 +37,54 @@
                 'items' => [
                     [
                         'label' => 'Dashboard | ภาพรวม',
-                        'icon' => 'th',
+                        'icon' => 'fa-solid fa-chart-line',
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Expenses | รายรับรายจ่าย',
-                        'icon' => 'th',
+                        'icon' => 'fa-duotone fa-money-bill',
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Statement | งบการเงิน',
-                        'icon' => 'th',
+                        'icon' => 'fa-money-check-dollar',
+                        ##<i class="fa-solid fa-money-check-dollar"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Investment | การลงทุน',
-                        'icon' => 'th',
+                        'icon' => 'fa-solid fa-display-chart-up-circle-dollar',
+                        ##<i class="fa-sharp fa-solid fa-display-chart-up-circle-dollar"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Calendar | ปฏิทิน',
-                        'icon' => 'th',
+                        'icon' => 'fa-calendar-days',
+                        ##<i class="fa-duotone fa-calendar-days"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Learning | การเรียน',
-                        'icon' => 'th',
+                        'icon' => 'fa-duotone fa-graduation-cap',
+                        ##<i class="fa-duotone fa-graduation-cap"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'To Do List | สิ่งที่ต้องทำ',
-                        'icon' => 'th',
+                        'icon' => 'fa-solid fa-list-check',
+                        ##<i class="fa-solid fa-list-check"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Working | การทำงาน',
-                        'icon' => 'th',
+                        'icon' => 'fa-duotone fa-briefcase',
+                        ##<i class="fa-duotone fa-briefcase"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Treasurer | งานเหรัญญิก',
-                        'icon' => 'th',
+                        'icon' => 'fa-duotone fa-treasure-chest',
+                        ##<i class="fa-duotone fa-treasure-chest"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     /*[
