@@ -35,8 +35,8 @@
 This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
 <b>INSTRUCTOR : </b>[Assistant Professor Pongpon Nilaphruek](https://www.linkedin.com/in/pongpon-nilaphruek-01a30335/)<br>
 <b>NAME :	</b>[Mr.THANAPHOL NANTAKASET](https://www.linkedin.com/in/satangthevalue/)<br>
-<b>FACULTY :</b>	Science and Technology<br>
-<b>PROGRAM :</b>	Big Data Management and Analytics 65 <br>
+<b>FACULTY :</b>	[Science and Technology](https://www.sci.rmutt.ac.th/)<br>
+<b>PROGRAM :</b>	[Big Data Management and Analytics](https://www.bigdata.rmutt.ac.th/) <br>
 
 <img src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/294737392_391632463063442_5752770952954949927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFdsBJs34R9Fhl9LuQwZqbq14dEbj9I16XXh0RuP0jXpbO4NmAXtTf_Mu99cEInhTyyKHpN8DS0quVBQjlZ4E2a&_nc_ohc=-YxxJy3oAwsAX_kFJWP&_nc_ht=scontent.fbkk29-8.fna&oh=00_AfC5Q-4u6WSD175-o1_YSi5o5qnoaG04cQJuNvytcRHZ6A&oe=644714CA"  width="150" height="150">
 </div>
