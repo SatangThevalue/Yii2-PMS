@@ -46,43 +46,51 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
  - Dashboard | ภาพรวม <br>
  <div align="center">
  
-[![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/10/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Expenses | รายรับรายจ่าย <br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Statement | งบการเงิน<br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Investment | การลงทุน<br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Calendar | ปฏิทิน<br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Learning | การเรียน<br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - To Do List | สิ่งที่ต้องทำ<br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Working | การทำงาน<br>
   <div align="center">
  
 [![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
 <br></div>
+
  - Treasurer | งานเหรัญญิก<br>
   <div align="center">
  
