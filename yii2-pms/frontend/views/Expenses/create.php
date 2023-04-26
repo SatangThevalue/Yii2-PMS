@@ -3,13 +3,13 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var common\models\Expensescategory $model */
+/** @var common\models\Expenses $model */
 
-$this->title = 'Create Expensescategory';
-$this->params['breadcrumbs'][] = ['label' => 'Expensescategories', 'url' => ['index']];
+$this->title = 'Create Expenses';
+$this->params['breadcrumbs'][] = ['label' => 'Expenses', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="expensescategory-create">
+<div class="expenses-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

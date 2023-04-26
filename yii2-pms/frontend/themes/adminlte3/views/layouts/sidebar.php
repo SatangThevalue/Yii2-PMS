@@ -67,6 +67,10 @@
                     [
                         'label' => 'Expenses | รายรับรายจ่าย',
                         'icon' => 'money-bill',
+                        'items' => [
+                            ['label' => 'บันทึกรายรับรายจ่าย', 'url' => ['expenses/index'], 'iconStyle' => 'far'],
+                            ['label' => 'ประเภทค่าใช้จ่าย', 'url' => ['expensescategory/index'], 'iconStyle' => 'far'],
+                        ]
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [

@@ -2,16 +2,16 @@
 
 namespace frontend\controllers;
 
-use common\models\Expensescategory;
-use common\models\ExpensescategorySearch;
+use common\models\Expenses;
+use common\models\ExpensesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ExpensescategoryController implements the CRUD actions for Expensescategory model.
+ * ExpensesController implements the CRUD actions for Expenses model.
  */
-class ExpensescategoryController extends Controller
+class ExpensesController extends Controller
 {
     /**
      * @inheritDoc
@@ -32,13 +32,13 @@ class ExpensescategoryController extends Controller
     }
 
     /**
-     * Lists all Expensescategory models.
+     * Lists all Expenses models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new ExpensescategorySearch();
+        $searchModel = new ExpensesSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -48,30 +48,30 @@ class ExpensescategoryController extends Controller
     }
 
     /**
-     * Displays a single Expensescategory model.
-     * @param int $expenses_category_id รหัสประเภทค่าใช้จ่าย
+     * Displays a single Expenses model.
+     * @param int $expenses_id รหัสธุรกรรม
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($expenses_category_id)
+    public function actionView($expenses_id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($expenses_category_id),
+            'model' => $this->findModel($expenses_id),
         ]);
     }
 
     /**
-     * Creates a new Expensescategory model.
+     * Creates a new Expenses model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Expensescategory();
+        $model = new Expenses();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'expenses_category_id' => $model->expenses_category_id]);
+                return $this->redirect(['view', 'expenses_id' => $model->expenses_id]);
             }
         } else {
             $model->loadDefaultValues();
@@ -83,18 +83,18 @@ class ExpensescategoryController extends Controller
     }
 
     /**
-     * Updates an existing Expensescategory model.
+     * Updates an existing Expenses model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param int $expenses_category_id รหัสประเภทค่าใช้จ่าย
+     * @param int $expenses_id รหัสธุรกรรม
      * @return string|\yii\web\Response
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($expenses_category_id)
+    public function actionUpdate($expenses_id)
     {
-        $model = $this->findModel($expenses_category_id);
+        $model = $this->findModel($expenses_id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'expenses_category_id' => $model->expenses_category_id]);
+            return $this->redirect(['view', 'expenses_id' => $model->expenses_id]);
         }
 
         return $this->render('update', [
@@ -103,29 +103,29 @@ class ExpensescategoryController extends Controller
     }
 
     /**
-     * Deletes an existing Expensescategory model.
+     * Deletes an existing Expenses model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param int $expenses_category_id รหัสประเภทค่าใช้จ่าย
+     * @param int $expenses_id รหัสธุรกรรม
      * @return \yii\web\Response
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($expenses_category_id)
+    public function actionDelete($expenses_id)
     {
-        $this->findModel($expenses_category_id)->delete();
+        $this->findModel($expenses_id)->delete();
 
         return $this->redirect(['index']);
     }
 
     /**
-     * Finds the Expensescategory model based on its primary key value.
+     * Finds the Expenses model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param int $expenses_category_id รหัสประเภทค่าใช้จ่าย
-     * @return Expensescategory the loaded model
+     * @param int $expenses_id รหัสธุรกรรม
+     * @return Expenses the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($expenses_category_id)
+    protected function findModel($expenses_id)
     {
-        if (($model = Expensescategory::findOne(['expenses_category_id' => $expenses_category_id])) !== null) {
+        if (($model = Expenses::findOne(['expenses_id' => $expenses_id])) !== null) {
             return $model;
         }
 

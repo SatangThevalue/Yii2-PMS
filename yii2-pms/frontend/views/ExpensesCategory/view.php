@@ -4,14 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /** @var yii\web\View $this */
-/** @var common\models\ExpensesCategory $model */
+/** @var common\models\Expensescategory $model */
 
 $this->title = $model->expenses_category_id;
-$this->params['breadcrumbs'][] = ['label' => 'Expenses Categories', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Expensescategories', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="expenses-category-view">
+<div class="expensescategory-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

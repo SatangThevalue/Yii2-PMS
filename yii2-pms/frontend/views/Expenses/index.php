@@ -1,24 +1,24 @@
 <?php
 
-use common\models\Expensescategory;
+use common\models\Expenses;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var common\models\ExpensescategorySearch $searchModel */
+/** @var common\models\ExpensesSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Expensescategories';
+$this->title = 'Expenses';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="expensescategory-index">
+<div class="expenses-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Expensescategory', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Expenses', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -29,12 +29,17 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'expenses_category_id',
-            'expenses_category_title:ntext',
+            'expenses_id',
+            'expenses_type:ntext',
+            'expenses_category_date',
+            'expenses_category_Fk',
+            'expenses_amount',
+            //'create_time',
+            //'update_time',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Expensescategory $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'expenses_category_id' => $model->expenses_category_id]);
+                'urlCreator' => function ($action, Expenses $model, $key, $index, $column) {
+                    return Url::toRoute([$action, 'expenses_id' => $model->expenses_id]);
                  }
             ],
         ],

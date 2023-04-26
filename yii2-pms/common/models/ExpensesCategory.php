@@ -12,7 +12,7 @@ use Yii;
  *
  * @property TblExpenses[] $tblExpenses
  */
-class ExpensesCategory extends \yii\db\ActiveRecord
+class Expensescategory extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
