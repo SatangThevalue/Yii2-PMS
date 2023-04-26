@@ -1,8 +1,8 @@
 <?php
 return [
     'charset' => 'UTF-8',
-    'language'=> 'th-TH',
-    'sourceLanguage'=> 'th-TH',
+    'language' => 'th-TH',
+    'sourceLanguage' => 'th-TH',
     'timeZone' => 'Asia/Bangkok',
     'version' => '0.0.1(Dev)',
     'aliases' => [
@@ -18,6 +18,7 @@ return [
             'port' => 6379,
             'database' => 0,
         ],
+        // TODO(SaTangTheValue): config PrettyUrl
         'urlManager' => [
             'class' => 'yii\web\UrlManager',
             // Disable index.php
@@ -25,12 +26,16 @@ return [
             // Disable r= routes
             'enablePrettyUrl' => true,
             'rules' => array(
-                   '<controller:\w+>/<id:\d+>' => '<controller>/view',
-                     '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                     '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                     'module/<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+                'module/<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
             ),
-     ],
+        ],
+        // TODO(SaTangTheValue): config redis Session
+        'session' => [
+            'class' => 'yii\redis\Session',
+        ],
         'cache' => [
             // TODO(SaTangTheValue): Use redis Cache
             //'class' => \yii\caching\FileCache::class,
