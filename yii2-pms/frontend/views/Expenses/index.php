@@ -2,11 +2,12 @@
 
 use common\models\Expenses;
 use common\models\Expensescategory;
+use common\models\Expensestype;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
-use yii\helpers\ArrayHelper;
 
 /** @var yii\web\View $this */
 /** @var frontend\models\ExpensesSearch $searchModel */
@@ -16,8 +17,6 @@ $this->title = 'Expenses';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="expenses-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
         <?= Html::a('Create Expenses', ['create'], ['class' => 'btn btn-success']) ?>
@@ -32,8 +31,14 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'expenses_id',
-            'expenses_type:ntext',
             'expenses_category_date',
+            [
+                'attribute' => 'expenses_type',
+                'filter' => ArrayHelper::map(Expensestype::find()->all(), 'expenses_type_id', 'expenses_type_title'),//กำหนด filter แบบ dropDownlist จากข้อมูล ใน field แบบ foreignKey
+                'value' => function($model){
+                    return $model->expensestype->expenses_type_title;
+                }
+            ],
             [
                 'attribute' => 'expenses_category_Fk',
                 'filter' => ArrayHelper::map(Expensescategory::find()->all(), 'expenses_category_id', 'expenses_category_title'),//กำหนด filter แบบ dropDownlist จากข้อมูล ใน field แบบ foreignKey

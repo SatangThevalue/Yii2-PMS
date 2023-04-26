@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230426_070932_create_table_tbl_expenses extends Migration
+class m230426_124552_create_table_expenses extends Migration
 {
     public function safeUp()
     {
@@ -12,10 +12,10 @@ class m230426_070932_create_table_tbl_expenses extends Migration
         }
 
         $this->createTable(
-            '{{%tbl_expenses}}',
+            '{{%expenses}}',
             [
                 'expenses_id' => $this->primaryKey()->comment('รหัสธุรกรรม'),
-                'expenses_type' => $this->text()->comment('ชนิดประเภท'),
+                'expenses_type' => $this->integer()->comment('รหัสชนิด'),
                 'expenses_category_date' => $this->dateTime()->notNull()->comment('วันที่ทำธุรกรรม'),
                 'expenses_category_Fk' => $this->integer()->comment('รหัสประเภท'),
                 'expenses_amount' => $this->decimal(10, 2)->comment('จำนวนเงิน'),
@@ -27,17 +27,26 @@ class m230426_070932_create_table_tbl_expenses extends Migration
 
         $this->addForeignKey(
             'fk_expenses_category',
-            '{{%tbl_expenses}}',
+            '{{%expenses}}',
             ['expenses_category_Fk'],
-            '{{%tbl_expenses_category}}',
+            '{{%expenses_category}}',
             ['expenses_category_id'],
             'SET NULL',
             'SET NULL'
+        );
+        $this->addForeignKey(
+            'fk_expenses_type',
+            '{{%expenses}}',
+            ['expenses_type'],
+            '{{%expenses_type}}',
+            ['expenses_type_id'],
+            'RESTRICT',
+            'RESTRICT'
         );
     }
 
     public function safeDown()
     {
-        $this->dropTable('{{%tbl_expenses}}');
+        $this->dropTable('{{%expenses}}');
     }
 }

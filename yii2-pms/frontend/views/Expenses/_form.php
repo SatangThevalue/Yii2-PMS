@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'expenses_type')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'expenses_type')->textInput() ?>
 
     <?= $form->field($model, 'expenses_category_date')->textInput() ?>
 

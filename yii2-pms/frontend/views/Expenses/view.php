@@ -13,8 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="expenses-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Update', ['update', 'expenses_id' => $model->expenses_id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'expenses_id' => $model->expenses_id], [
@@ -30,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'expenses_id',
-            'expenses_type:ntext',
+            'expenses_type',
             'expenses_category_date',
             'expenses_category_Fk',
             'expenses_amount',

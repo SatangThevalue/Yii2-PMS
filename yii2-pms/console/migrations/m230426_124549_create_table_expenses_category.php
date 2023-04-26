@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230426_070930_create_table_tbl_expenses_category extends Migration
+class m230426_124549_create_table_expenses_category extends Migration
 {
     public function safeUp()
     {
@@ -12,7 +12,7 @@ class m230426_070930_create_table_tbl_expenses_category extends Migration
         }
 
         $this->createTable(
-            '{{%tbl_expenses_category}}',
+            '{{%expenses_category}}',
             [
                 'expenses_category_id' => $this->primaryKey()->comment('รหัสประเภทค่าใช้จ่าย'),
                 'expenses_category_title' => $this->text()->notNull()->comment('ชื่อประเภทค่าใช้จ่าย'),
@@ -23,6 +23,6 @@ class m230426_070930_create_table_tbl_expenses_category extends Migration
 
     public function safeDown()
     {
-        $this->dropTable('{{%tbl_expenses_category}}');
+        $this->dropTable('{{%expenses_category}}');
     }
 }

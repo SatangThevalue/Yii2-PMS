@@ -17,8 +17,8 @@ class ExpensesSearch extends Expenses
     public function rules()
     {
         return [
-            [['expenses_id', 'expenses_category_Fk'], 'integer'],
-            [['expenses_type', 'expenses_category_date', 'create_time', 'update_time'], 'safe'],
+            [['expenses_id', 'expenses_type', 'expenses_category_Fk'], 'integer'],
+            [['expenses_category_date', 'create_time', 'update_time'], 'safe'],
             [['expenses_amount'], 'number'],
         ];
     }
@@ -60,14 +60,13 @@ class ExpensesSearch extends Expenses
         // grid filtering conditions
         $query->andFilterWhere([
             'expenses_id' => $this->expenses_id,
+            'expenses_type' => $this->expenses_type,
             'expenses_category_date' => $this->expenses_category_date,
             'expenses_category_Fk' => $this->expenses_category_Fk,
             'expenses_amount' => $this->expenses_amount,
             'create_time' => $this->create_time,
             'update_time' => $this->update_time,
         ]);
-
-        $query->andFilterWhere(['like', 'expenses_type', $this->expenses_type]);
 
         return $dataProvider;
     }
