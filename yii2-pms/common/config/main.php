@@ -5,6 +5,17 @@ return [
     'sourceLanguage' => 'th-TH',
     'timeZone' => 'Asia/Bangkok',
     'version' => '0.0.1(Dev)',
+    // in your module configuration you can have 'gridviewKrajee' as another module
+    'modules' => [
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module',
+            // your other grid module settings
+        ],
+        'gridviewKrajee' =>  [
+            'class' => '\kartik\grid\Module',
+            // your other grid module settings
+        ]
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',

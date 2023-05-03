@@ -22,7 +22,14 @@
         "rmrevin/yii2-fontawesome": "2.10.*",
         "kartik-v/yii2-widgets": "^3.4",
         "kartik-v/yii2-number": "^1.0",
-        "yiisoft/yii2-redis": "~2.0.0"
+        "yiisoft/yii2-redis": "~2.0.0",
+        "kartik-v/yii2-grid": "^3.5",
+        "kartik-v/yii2-bootstrap5-dropdown": "^1.0",
+        "kartik-v/yii2-date-range": "^1.7",
+        "kartik-v/yii2-widget-datepicker": "^1.4",
+        "kartik-v/yii2-datecontrol": "^1.9",
+        "kartik-v/yii2-widget-datetimepicker": "^1.5",
+        "yiidoc/yii2-timeago": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

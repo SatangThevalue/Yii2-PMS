@@ -67,7 +67,6 @@ class ExpensesSearch extends Expenses
             'create_time' => $this->create_time,
             'update_time' => $this->update_time,
         ]);
-
         return $dataProvider;
     }
 }

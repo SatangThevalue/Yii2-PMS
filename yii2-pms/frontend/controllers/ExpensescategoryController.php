@@ -94,7 +94,8 @@ class ExpensescategoryController extends Controller
         $model = $this->findModel($expenses_category_id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'expenses_category_id' => $model->expenses_category_id]);
+            /* return $this->redirect(['view', 'expenses_category_id' => $model->expenses_category_id]); */
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [

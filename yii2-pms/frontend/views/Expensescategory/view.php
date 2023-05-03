@@ -6,14 +6,12 @@ use yii\widgets\DetailView;
 /** @var yii\web\View $this */
 /** @var common\models\Expensescategory $model */
 
-$this->title = $model->expenses_category_id;
-$this->params['breadcrumbs'][] = ['label' => 'Expensescategories', 'url' => ['index']];
+$this->title = 'Expenses Category';
+$this->params['breadcrumbs'][] = ['label' => 'Expenses Category', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="expensescategory-view">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
         <?= Html::a('Update', ['update', 'expenses_category_id' => $model->expenses_category_id], ['class' => 'btn btn-primary']) ?>

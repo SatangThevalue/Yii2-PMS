@@ -10,15 +10,12 @@ use yii\grid\GridView;
 /** @var frontend\models\ExpensescategorySearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Expensescategories';
+$this->title = 'Expenses Category';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="expensescategory-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
-        <?= Html::a('Create Expensescategory', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Expenses Category', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -29,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'expenses_category_id',
+            //'expenses_category_id',
             'expenses_category_title:ntext',
             [
                 'class' => ActionColumn::className(),

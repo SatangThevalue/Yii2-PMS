@@ -27,7 +27,7 @@ class ExpensesController extends Controller
                         'delete' => ['POST'],
                     ],
                 ],
-            ]
+            ],
         );
     }
 
@@ -71,7 +71,8 @@ class ExpensesController extends Controller
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'expenses_id' => $model->expenses_id]);
+                /* return $this->redirect(['view', 'expenses_id' => $model->expenses_id]); */
+                return $this->redirect(['index']);
             }
         } else {
             $model->loadDefaultValues();
@@ -97,9 +98,10 @@ class ExpensesController extends Controller
             return $this->redirect(['view', 'expenses_id' => $model->expenses_id]);
         }
 
-        return $this->render('update', [
+        /* return $this->render('update', [
             'model' => $model,
-        ]);
+        ]); */
+        return $this->redirect(['index']);
     }
 
     /**

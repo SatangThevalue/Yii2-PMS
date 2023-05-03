@@ -10,4 +10,5 @@ return [
     // other settings
     // 'adminEmail' => 'admin@example.com'
     'bsDependencyEnabled' => false, // this will not load Bootstrap CSS and JS for all Krajee extensions
+    // format settings for displaying each date attribute (ICU format example)
 ];

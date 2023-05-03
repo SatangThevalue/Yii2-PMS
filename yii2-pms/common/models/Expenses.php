@@ -1,6 +1,9 @@
 <?php
 
 namespace common\models;
+// TODO(SaTangTheValue): use TimestampBehavior in model
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 use Yii;
 
@@ -20,6 +23,20 @@ use Yii;
  */
 class Expenses extends \yii\db\ActiveRecord
 {
+    // TODO(SaTangTheValue): add TimestampBehavior in model
+    public function behaviors()
+    {
+        return [
+
+            'timestamp' => [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'create_time',
+                'updatedAtAttribute' => 'update_time',
+                'value' => new Expression('NOW()'), //กำหนดค่า หรืออาจใช้ค่าอย่างอื่นที่ return เป็น timestamp ก็ได้
+            ],
+            //other behaviors
+        ];
+    }
     /**
      * {@inheritdoc}
      */
@@ -50,12 +67,12 @@ class Expenses extends \yii\db\ActiveRecord
     {
         return [
             'expenses_id' => 'รหัสธุรกรรม',
-            'expenses_type' => 'รหัสชนิด',
+            'expenses_type' => 'ชนิด',
             'expenses_category_date' => 'วันที่ทำธุรกรรม',
-            'expenses_category_Fk' => 'รหัสประเภท',
+            'expenses_category_Fk' => 'ประเภท',
             'expenses_amount' => 'จำนวนเงิน',
-            'create_time' => 'วันที่สร้าง',
-            'update_time' => 'วันที่อัพเดทข้อมูล',
+            'create_time' => 'สร้างข้อมูลเมื่อ',
+            'update_time' => 'อัพเดทข้อมูลเมื่อ',
         ];
     }
 
@@ -64,7 +81,7 @@ class Expenses extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getExpensesCategoryFk()
+    public function getExpensesCategory()
     {
         return $this->hasOne(ExpensesCategory::class, ['expenses_category_id' => 'expenses_category_Fk']);
     }
