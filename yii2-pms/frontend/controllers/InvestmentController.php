@@ -71,7 +71,8 @@ class InvestmentController extends Controller
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'investment_id' => $model->investment_id]);
+                /* return $this->redirect(['view', 'investment_id' => $model->investment_id]); */
+                return $this->redirect(['index']);
             }
         } else {
             $model->loadDefaultValues();
@@ -94,7 +95,8 @@ class InvestmentController extends Controller
         $model = $this->findModel($investment_id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'investment_id' => $model->investment_id]);
+            /* return $this->redirect(['view', 'investment_id' => $model->investment_id]); */
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [

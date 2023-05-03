@@ -1,6 +1,9 @@
 <?php
 
 namespace common\models;
+// TODO(SaTangTheValue): use TimestampBehavior in model
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 use Yii;
 
@@ -18,6 +21,20 @@ use Yii;
  */
 class Investment extends \yii\db\ActiveRecord
 {
+    // TODO(SaTangTheValue): add TimestampBehavior in model
+    public function behaviors()
+    {
+        return [
+
+            'timestamp' => [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'create_time',
+                'updatedAtAttribute' => 'update_time',
+                'value' => new Expression('NOW()'), //กำหนดค่า หรืออาจใช้ค่าอย่างอื่นที่ return เป็น timestamp ก็ได้
+            ],
+            //other behaviors
+        ];
+    }
     /**
      * {@inheritdoc}
      */
@@ -60,7 +77,7 @@ class Investment extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getInvestmentTypeFk()
+    public function getInvestmentType()
     {
         return $this->hasOne(InvestmentType::class, ['investment_type_id' => 'investment_type_fk']);
     }

@@ -68,7 +68,7 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
  - Investment | การลงทุน<br>
   <div align="center">
  
-[![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/100/?title=progress&width=500&width=300)]()
 <br></div>
 
  - Calendar | ปฏิทิน<br>

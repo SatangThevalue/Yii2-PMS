@@ -2,6 +2,10 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+// TODO(SaTangTheValue): Improt ArrayHelper
+use yii\helpers\ArrayHelper;
+// TODO(SaTangTheValue): models from common
+use common\models\InvestmentType;
 
 /** @var yii\web\View $this */
 /** @var common\models\Investment $model */
@@ -12,9 +16,6 @@ $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="investment-view">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Update', ['update', 'investment_id' => $model->investment_id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'investment_id' => $model->investment_id], [
@@ -31,7 +32,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'investment_id',
             'investment_date',
-            'investment_type_fk',
+            //'investment_type_fk',
+            [
+                'attribute' => 'investment_type_fk',
+                'label' => 'ประเภท',
+                'filter' => ArrayHelper::map(InvestmentType::find()->all(), 'investment_type_id', 'investment_type_title'), //กำหนด filter แบบ dropDownlist จากข้อมูล ใน field แบบ foreignKey
+                'value' => function ($model) {
+                    return $model->investmentType->investment_type_title;
+                }
+            ],
             'investment_amount',
             'create_time',
             'update_time',

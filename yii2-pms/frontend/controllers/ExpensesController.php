@@ -95,13 +95,13 @@ class ExpensesController extends Controller
         $model = $this->findModel($expenses_id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'expenses_id' => $model->expenses_id]);
+            /* return $this->redirect(['view', 'expenses_id' => $model->expenses_id]); */
+            return $this->redirect(['index']);
         }
 
-        /* return $this->render('update', [
+        return $this->render('update', [
             'model' => $model,
-        ]); */
-        return $this->redirect(['index']);
+        ]);        
     }
 
     /**

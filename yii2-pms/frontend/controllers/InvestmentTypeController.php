@@ -71,7 +71,8 @@ class InvestmenttypeController extends Controller
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'investment_type_id' => $model->investment_type_id]);
+                /* return $this->redirect(['view', 'investment_type_id' => $model->investment_type_id]); */
+                return $this->redirect(['index']);
             }
         } else {
             $model->loadDefaultValues();
@@ -94,7 +95,8 @@ class InvestmenttypeController extends Controller
         $model = $this->findModel($investment_type_id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'investment_type_id' => $model->investment_type_id]);
+            /* return $this->redirect(['view', 'investment_type_id' => $model->investment_type_id]); */
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [

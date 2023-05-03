@@ -12,11 +12,11 @@ $config = [
 if (!YII_ENV_TEST) {
      //configuration adjustments for 'dev' environment
     //NOTE(SaTangTheValue): Frontend debug & Gii All allowed IP
-    $config['bootstrap'][] = 'debug';
-    $config['modules']['debug'] = [
-        'class' => \yii\debug\Module::class,
-        'allowedIPs' => ['*']
-    ];
+    #$config['bootstrap'][] = 'debug';
+    #$config['modules']['debug'] = [
+    #    'class' => \yii\debug\Module::class,
+    #    'allowedIPs' => ['*']
+    #];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [

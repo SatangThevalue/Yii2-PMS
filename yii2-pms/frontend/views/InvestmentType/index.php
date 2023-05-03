@@ -15,8 +15,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="investment-type-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Create Investment Type', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -29,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'investment_type_id',
+            //'investment_type_id',
             'investment_type_title:ntext',
             [
                 'class' => ActionColumn::className(),
