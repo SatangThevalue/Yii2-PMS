@@ -84,7 +84,7 @@
                         'icon' => 'hand-holding-usd',
                         ##<i class="fas fa-hand-holding-usd"></i>
                         'items' => [
-                            ['label' => 'บันทึกการลงทุน', 'url' => ['expenses/index'], 'iconStyle' => 'far'],
+                            ['label' => 'บันทึกการลงทุน', 'url' => ['investment/index'], 'iconStyle' => 'far'],
                             ['label' => 'ประเภทการลงทุน', 'url' => ['investmenttype/index'], 'iconStyle' => 'far'],
                         ]
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
