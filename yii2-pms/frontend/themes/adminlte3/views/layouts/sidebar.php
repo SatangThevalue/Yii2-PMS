@@ -99,6 +99,7 @@
                         'label' => 'Learning | การเรียน',
                         'icon' => 'graduation-cap',
                         ##<i class="fa-duotone fa-graduation-cap"></i>
+                        'url' => ['learning/index'],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
