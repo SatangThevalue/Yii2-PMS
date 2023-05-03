@@ -90,12 +90,6 @@
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
-                        'label' => 'Calendar | ปฏิทิน',
-                        'icon' => 'calendar-alt',
-                        ##<i class="fas fa-calendar-alt"></i>
-                        ##'badge' => '<span class="right badge badge-danger">New</span>'
-                    ],
-                    [
                         'label' => 'Learning | การเรียน',
                         'icon' => 'graduation-cap',
                         ##<i class="fa-duotone fa-graduation-cap"></i>
