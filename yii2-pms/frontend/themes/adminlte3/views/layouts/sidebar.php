@@ -112,6 +112,7 @@
                         'label' => 'Working | การทำงาน',
                         'icon' => 'briefcase',
                         ##<i class="fa-duotone fa-briefcase"></i>
+                        'url' => ['working/index'],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [

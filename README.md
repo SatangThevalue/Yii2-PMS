@@ -45,7 +45,7 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
  <h1> Overall | ภาพรวมทั้งโปรเจค </h1><br>
  <div align="center">
  
-[![Status](https://progress-bar.dev/10/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/50/?title=progress&width=500&width=300)]()
 <br></div>
  - Dashboard | ภาพรวม <br>
  <div align="center">
@@ -92,7 +92,7 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
  - Working | การทำงาน<br>
   <div align="center">
  
-[![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/100/?title=progress&width=500&width=300)]()
 <br></div>
 
  - Treasurer | งานเหรัญญิก<br>
