@@ -19,6 +19,11 @@ class m230426_124550_create_table_expenses_type extends Migration
             ],
             $tableOptions
         );
+        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'เงินเดือน'));
+        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'เงินพิเศษ'));
+        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'ค่าห้อง'));
+        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'ค่าอาหาร'));
+        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'ค่าเดินทาง'));
     }
 
     public function safeDown()

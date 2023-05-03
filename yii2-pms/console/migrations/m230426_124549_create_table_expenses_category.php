@@ -19,6 +19,18 @@ class m230426_124549_create_table_expenses_category extends Migration
             ],
             $tableOptions
         );
+        $this->insert(
+            '{{%expenses_category}}',
+            array(
+                'expenses_category_title' => 'รายรับ'
+            )
+        );
+        $this->insert(
+            '{{%expenses_category}}',
+            array(
+                'expenses_category_title' => 'รายจ่าย'
+            )
+        );
     }
 
     public function safeDown()
