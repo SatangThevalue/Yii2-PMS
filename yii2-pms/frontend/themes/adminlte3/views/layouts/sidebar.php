@@ -105,6 +105,7 @@
                         'label' => 'To Do List | สิ่งที่ต้องทำ',
                         'icon' => 'clipboard-list',
                         ##<i class="fas fa-clipboard-list"></i>
+                        'url' => ['todolist/index'],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
