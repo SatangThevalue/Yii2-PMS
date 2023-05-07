@@ -45,13 +45,13 @@ This Final <b>Project in Specialized Computer Programming ( Code : 09152103 )</b
  <h1> Overall | ภาพรวมทั้งโปรเจค </h1><br>
  <div align="center">
  
-[![Status](https://progress-bar.dev/85/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/100/?title=progress&width=500&width=300)]()
 <br></div>
 ##  Modules in the project | โมดูลในโปรเจกต์ <a name = "modules"></a><br>
  - Dashboard | ภาพรวม <br>
  <div align="center">
  
-[![Status](https://progress-bar.dev/10/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/100/?title=progress&width=500&width=300)]()
 <br></div>
 
  - Expenses | รายรับรายจ่าย <br>
@@ -63,7 +63,7 @@ This Final <b>Project in Specialized Computer Programming ( Code : 09152103 )</b
  - Statement | งบการเงิน<br>
   <div align="center">
  
-[![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/100/?title=progress&width=500&width=300)]()
 <br></div>
 
  - Investment | การลงทุน<br>
