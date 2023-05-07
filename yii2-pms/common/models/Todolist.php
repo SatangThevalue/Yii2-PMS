@@ -44,4 +44,24 @@ class Todolist extends \yii\db\ActiveRecord
             'todolist_status' => 'สถานะ',
         ];
     }
+    public function getCountTodolistStatusNo()
+    {
+        $command = Yii::$app->db->createCommand("SELECT COUNT(todolist.todolist_status) FROM todolist WHERE todolist.todolist_status = 0");
+        $CountTodolist = $command->queryScalar();
+        if($CountTodolist <> ""){
+            return $CountTodolist;
+        }else {
+            return 0;
+        }
+    }
+    public function getCountTodolistStatusYes()
+    {
+        $command = Yii::$app->db->createCommand("SELECT COUNT(todolist.todolist_status) FROM todolist WHERE todolist.todolist_status = 1");
+        $CountTodolist = $command->queryScalar();
+        if($CountTodolist <> ""){
+            return $CountTodolist;
+        }else {
+            return 0;
+        }
+    }
 }

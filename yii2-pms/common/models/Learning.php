@@ -44,4 +44,24 @@ class Learning extends \yii\db\ActiveRecord
             'learning_status' => 'สถานะ',
         ];
     }
+    public function getCountLearningStatusNo()
+    {
+        $command = Yii::$app->db->createCommand("SELECT COUNT(learning.learning_status) FROM learning WHERE learning.learning_status = 0");
+        $CountLearning = $command->queryScalar();
+        if($CountLearning <> ""){
+            return $CountLearning;
+        }else {
+            return 0;
+        }
+    }
+    public function getCountLearningStatusYes()
+    {
+        $command = Yii::$app->db->createCommand("SELECT COUNT(learning.learning_status) FROM learning WHERE learning.learning_status = 1");
+        $CountLearning = $command->queryScalar();
+        if($CountLearning <> ""){
+            return $CountLearning;
+        }else {
+            return 0;
+        }
+    }
 }

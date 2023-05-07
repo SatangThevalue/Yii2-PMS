@@ -44,4 +44,24 @@ class Working extends \yii\db\ActiveRecord
             'working_status' => 'สถานะการทำงาน',
         ];
     }
+    public function getCountWorkingStatusNo()
+    {
+        $command = Yii::$app->db->createCommand("SELECT COUNT(working.working_status) FROM working WHERE working.working_status = 0");
+        $CountWorking = $command->queryScalar();
+        if($CountWorking <> ""){
+            return $CountWorking;
+        }else {
+            return 0;
+        }
+    }
+    public function getCountWorkingStatusYes()
+    {
+        $command = Yii::$app->db->createCommand("SELECT COUNT(working.working_status) FROM working WHERE working.working_status = 1");
+        $CountWorking = $command->queryScalar();
+        if($CountWorking <> ""){
+            return $CountWorking;
+        }else {
+            return 0;
+        }
+    }
 }
