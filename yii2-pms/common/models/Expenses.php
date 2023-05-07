@@ -95,4 +95,34 @@ class Expenses extends \yii\db\ActiveRecord
     {
         return $this->hasOne(ExpensesType::class, ['expenses_type_id' => 'expenses_type']);
     }
+    public function getExpensesValue()
+    {
+        $command = Yii::$app->db->createCommand("SELECT SUM(expenses.expenses_amount) FROM expenses WHERE expenses.expenses_type = 2 GROUP BY expenses.expenses_type");
+        $Expenses = $command->queryScalar();
+        if($Expenses <> ""){
+            return $Expenses;
+        }else {
+            return 0;
+        }
+    }
+    public function getIncomeValue()
+    {
+        $command = Yii::$app->db->createCommand("SELECT SUM(expenses.expenses_amount) FROM expenses WHERE expenses.expenses_type = 1 GROUP BY expenses.expenses_type");
+        $Income = $command->queryScalar();
+        if($Income <> ""){
+            return $Income;
+        }else {
+            return 0;
+        }
+    }
+    public function getDebtValue()
+    {
+        $command = Yii::$app->db->createCommand("SELECT SUM(expenses.expenses_amount) FROM expenses WHERE expenses.expenses_type = 3 GROUP BY expenses.expenses_type");
+        $Debt = $command->queryScalar();
+        if($Debt <> ""){
+            return $Debt;
+        }else {
+            return 0;
+        }
+    }
 }

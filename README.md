@@ -32,7 +32,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/th/thumb/a/af/RMUTTLOGO.png/150px-RMUTTLOGO.png"  width="150" height="275"><br>
 <img src="https://upload.wikimedia.org/wikipedia/th/thumb/6/63/RMUTT-logo-01.png/230px-RMUTT-logo-01.png"  width="229" height="85">
 
-This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
+This Final <b>Project in Specialized Computer Programming ( Code : 09152103 )</b> <br>
 <b>INSTRUCTOR : </b>[Assistant Professor Pongpon Nilaphruek](https://www.linkedin.com/in/pongpon-nilaphruek-01a30335/)<br>
 <b>NAME :	</b>[Mr.THANAPHOL NANTAKASET](https://www.linkedin.com/in/satangthevalue/)<br>
 <b>FACULTY :</b>	[Science and Technology](https://www.sci.rmutt.ac.th/)<br>
@@ -45,7 +45,7 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
  <h1> Overall | ภาพรวมทั้งโปรเจค </h1><br>
  <div align="center">
  
-[![Status](https://progress-bar.dev/50/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/85/?title=progress&width=500&width=300)]()
 <br></div>
 ##  Modules in the project | โมดูลในโปรเจกต์ <a name = "modules"></a><br>
  - Dashboard | ภาพรวม <br>
@@ -93,7 +93,7 @@ This Final Project in Specialized Computer Programming ( Code : 09152103 )<br>
  - Treasurer | งานเหรัญญิก<br>
   <div align="center">
  
-[![Status](https://progress-bar.dev/0/?title=progress&width=500&width=300)]()
+[![Status](https://progress-bar.dev/100/?title=progress&width=500&width=300)]()
 <br></div>
 <br>
 ### 🏁 Getting Started | เริ่มต้นใช้งาน <a name = "getting_started"></a>

@@ -1,134 +1,68 @@
 <?php
-$this->title = 'Starter Page';
+$this->title = 'Home';
 $this->params['breadcrumbs'] = [['label' => $this->title]];
 ?>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6">
-            <?= \hail812\adminlte\widgets\Alert::widget([
-                'type' => 'success',
-                'body' => '<h3>Congratulations!</h3>',
-            ]) ?>
-            <?= \hail812\adminlte\widgets\Callout::widget([
-                'type' => 'danger',
-                'head' => 'I am a danger callout!',
-                'body' => 'There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.'
-            ]) ?>
-        </div>
-    </div>
+    <center>
+        <h3 class="mb-2">PMS - Person Manage System ( โปรแกรมจัดการส่วนบุคคล )</h3>
+    </center>
 
-    <div class="row">
-        <div class="col-12 col-sm-6 col-md-3">
-            <?= \hail812\adminlte\widgets\InfoBox::widget([
-                'text' => 'CPU Traffic',
-                'number' => '10 <small>%</small>',
-                'icon' => 'fas fa-cog',
-            ]) ?>
-        </div>
-    </div>
+</div>
+<div class="col-md-12">
+    <div class="timeline">
 
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\InfoBox::widget([
-                'text' => 'Messages',
-                'number' => '1,410',
-                'icon' => 'far fa-envelope',
-            ]) ?>
+        <div class="time-label">
+            <span class="bg-red">Person Manage System</span>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\InfoBox::widget([
-                'text' => 'Bookmarks',
-                'number' => '410',
-                 'theme' => 'success',
-                'icon' => 'far fa-flag',
-            ]) ?>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\InfoBox::widget([
-                'text' => 'Uploads',
-                'number' => '13,648',
-                'theme' => 'gradient-warning',
-                'icon' => 'far fa-copy',
-            ]) ?>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\InfoBox::widget([
-                'text' => 'Bookmarks',
-                'number' => '41,410',
-                'icon' => 'far fa-bookmark',
-                'progress' => [
-                    'width' => '70%',
-                    'description' => '70% Increase in 30 Days'
-                ]
-            ]) ?>
+        <div>
+            <i class="fas fa-chart-line bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Dashboard | ภาพรวม</h3>
+            </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <?php $infoBox = \hail812\adminlte\widgets\InfoBox::begin([
-                'text' => 'Likes',
-                'number' => '41,410',
-                'theme' => 'success',
-                'icon' => 'far fa-thumbs-up',
-                'progress' => [
-                    'width' => '70%',
-                    'description' => '70% Increase in 30 Days'
-                ]
-            ]) ?>
-            <?= \hail812\adminlte\widgets\Ribbon::widget([
-                'id' => $infoBox->id.'-ribbon',
-                'text' => 'Ribbon',
-            ]) ?>
-            <?php \hail812\adminlte\widgets\InfoBox::end() ?>
+        <div>
+            <i class="fas fa-money-bill bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Expenses | รายรับรายจ่าย</h3>
+            </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\InfoBox::widget([
-                'text' => 'Events',
-                'number' => '41,410',
-                'theme' => 'gradient-warning',
-                'icon' => 'far fa-calendar-alt',
-                'progress' => [
-                    'width' => '70%',
-                    'description' => '70% Increase in 30 Days'
-                ],
-                'loadingStyle' => true
-            ]) ?>
+        <div>
+            <i class="fas fa-dollar-sign bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Statement | งบการเงิน</h3>
+            </div>
         </div>
-    </div>
+        <div>
+            <i class="fas fa-hand-holding-usd bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Investment | การลงทุน</h3>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-graduation-cap bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Learning | การเรียน</h3>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-clipboard-list bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">To Do List | สิ่งที่ต้องทำ</h3>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-briefcase bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Working | การทำงาน</h3>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-balance-scale bg-green"></i>
+            <div class="timeline-item">
+                <h3 class="timeline-header">Treasurer | งานเหรัญญิก</h3>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\SmallBox::widget([
-                'title' => '150',
-                'text' => 'New Orders',
-                'icon' => 'fas fa-shopping-cart',
-            ]) ?>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <?php $smallBox = \hail812\adminlte\widgets\SmallBox::begin([
-                'title' => '150',
-                'text' => 'New Orders',
-                'icon' => 'fas fa-shopping-cart',
-                'theme' => 'success'
-            ]) ?>
-            <?= \hail812\adminlte\widgets\Ribbon::widget([
-                'id' => $smallBox->id.'-ribbon',
-                'text' => 'Ribbon',
-                'theme' => 'warning',
-                'size' => 'lg',
-                'textSize' => 'lg'
-            ]) ?>
-            <?php \hail812\adminlte\widgets\SmallBox::end() ?>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <?= \hail812\adminlte\widgets\SmallBox::widget([
-                'title' => '44',
-                'text' => 'User Registrations',
-                'icon' => 'fas fa-user-plus',
-                'theme' => 'gradient-success',
-                'loadingStyle' => true
-            ]) ?>
-        </div>
     </div>
 </div>

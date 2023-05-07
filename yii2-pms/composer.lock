@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0109a02c1a1efad3473372edd9cf929",
+    "content-hash": "61c80e1ed007ed949f893077a23fc530",
     "packages": [
+        {
+            "name": "2amigos/yii2-chartjs-widget",
+            "version": "2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-chartjs-widget.git",
+                "reference": "b144a4ebd923872a7263c980f8afe2e212378275"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-chartjs-widget/zipball/b144a4ebd923872a7263c980f8afe2e212378275",
+                "reference": "b144a4ebd923872a7263c980f8afe2e212378275",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/chartjs": "~2.6",
+                "yiisoft/yii2": "~2.0.5"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "~4.4"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\chartjs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "2amigOS! Consulting Group",
+                    "email": "hola@2amigos.us",
+                    "homepage": "http://2amigos.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ChartJs widget for Yii2.",
+            "homepage": "http://yiiwheels.com/extension/chartjs-widget",
+            "keywords": [
+                "2amigos",
+                "chartjs",
+                "extension",
+                "widget",
+                "yii",
+                "yii 2",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/2amigos/yii2-chartjs-widget/issues",
+                "source": "https://github.com/2amigos/yii2-chartjs-widget"
+            },
+            "time": "2018-05-02T17:59:16+00:00"
+        },
         {
             "name": "almasaeed2010/adminlte",
             "version": "v3.2.0",
@@ -65,6 +127,24 @@
             "type": "bower-asset"
         },
         {
+            "name": "bower-asset/chartjs",
+            "version": "v2.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chartjs/Chart.js.git",
+                "reference": "9bd4cf82fda9f50a5fb50b72843e06ab88124278"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chartjs/Chart.js/zipball/9bd4cf82fda9f50a5fb50b72843e06ab88124278",
+                "reference": "9bd4cf82fda9f50a5fb50b72843e06ab88124278"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/fontawesome",
             "version": "v4.3.0",
             "source": {
@@ -82,28 +162,6 @@
                 "OFL-1.1",
                 "MIT",
                 "CC-BY-3.0"
-            ]
-        },
-        {
-            "name": "bower-asset/fullcalendar",
-            "version": "v3.10.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fullcalendar/fullcalendar.git",
-                "reference": "791e71059c597473d48d1d1aa2f72cbff670252c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fullcalendar/fullcalendar/zipball/791e71059c597473d48d1d1aa2f72cbff670252c",
-                "reference": "791e71059c597473d48d1d1aa2f72cbff670252c"
-            },
-            "require": {
-                "bower-asset/jquery": ">=2,<4.0",
-                "bower-asset/moment": ">=2.20.1,<3.0.0"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
             ]
         },
         {
@@ -160,24 +218,6 @@
             },
             "require": {
                 "bower-asset/jquery": ">=1.4"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "bower-asset/moment",
-            "version": "2.29.4",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:moment/moment.git",
-                "reference": "000ac1800e620f770f4eb31b5ae908f6167b0ab2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment/zipball/000ac1800e620f770f4eb31b5ae908f6167b0ab2",
-                "reference": "000ac1800e620f770f4eb31b5ae908f6167b0ab2"
             },
             "type": "bower-asset",
             "license": [
@@ -2342,58 +2382,57 @@
             "time": "2018-10-09T17:40:19+00:00"
         },
         {
-            "name": "lav45/yii2-fullcalendar",
-            "version": "1.1.1",
+            "name": "miloschuman/yii2-highcharts-widget",
+            "version": "v10.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/LAV45/yii2-fullcalendar.git",
-                "reference": "0a7ffac35bd3e8f28a4c724b2fc3826cb9c6c46a"
+                "url": "https://github.com/miloschuman/yii2-highcharts.git",
+                "reference": "cf8a31577fd34950547aec1935d6109f6db05e31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LAV45/yii2-fullcalendar/zipball/0a7ffac35bd3e8f28a4c724b2fc3826cb9c6c46a",
-                "reference": "0a7ffac35bd3e8f28a4c724b2fc3826cb9c6c46a",
+                "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/cf8a31577fd34950547aec1935d6109f6db05e31",
+                "reference": "cf8a31577fd34950547aec1935d6109f6db05e31",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/fullcalendar": "3.*",
-                "yiisoft/yii2": "2.0.*"
+                "npm-asset/highcharts": "^10.0",
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4"
             },
             "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "lav45\\widget\\": ""
+                    "miloschuman\\highcharts\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD 3-Clause"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Alexey Loban",
-                    "email": "lav451@gmail.com"
+                    "name": "Milo Schuman",
+                    "email": "miloschuman@gmail.com"
                 }
             ],
-            "description": "Widget for Yii Framework 2.0 to use FullCalendar",
-            "homepage": "https://github.com/lav45/yii2-fullcalendar",
+            "description": "Highcharts widget for Yii 2 Framework.",
+            "homepage": "https://github.com/miloschuman/yii2-highcharts",
             "keywords": [
-                "calendar",
                 "extension",
-                "fullcalendar",
+                "highcharts",
+                "highmaps",
+                "highstock",
                 "widget",
                 "yii2"
             ],
             "support": {
-                "issues": "https://github.com/LAV45/yii2-fullcalendar/issues",
-                "source": "https://github.com/LAV45/yii2-fullcalendar/tree/1.1.1"
+                "issues": "https://github.com/miloschuman/yii2-highcharts/issues",
+                "source": "https://github.com/miloschuman/yii2-highcharts/tree/v10.0.1"
             },
-            "time": "2017-02-10T20:17:03+00:00"
+            "time": "2023-01-23T19:41:04+00:00"
         },
         {
             "name": "npm-asset/bootstrap",
@@ -2405,6 +2444,18 @@
             "type": "npm-asset",
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/highcharts",
+            "version": "10.3.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/highcharts/-/highcharts-10.3.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "https://www.highcharts.com/license"
             ]
         },
         {

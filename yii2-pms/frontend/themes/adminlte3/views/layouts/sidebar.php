@@ -76,6 +76,7 @@
                     [
                         'label' => 'Statement | งบการเงิน',
                         'icon' => 'dollar-sign',
+                        'url' => ['statement/index'],
                         ##<i class="fad fa-dollar-sign"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
