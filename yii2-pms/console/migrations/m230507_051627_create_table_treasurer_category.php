@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230503_083627_create_table_treasurer_category extends Migration
+class m230507_051627_create_table_treasurer_category extends Migration
 {
     public function safeUp()
     {
@@ -19,10 +19,10 @@ class m230503_083627_create_table_treasurer_category extends Migration
             ],
             $tableOptions
         );
-        $this->insert('{{%treasurer_category}}', ['treasurer_category_title' => 'เรียกเก็บค่าห้อง']);
-        $this->insert('{{%treasurer_category}}', ['treasurer_category_title' => 'ยอดคงค้าง']);
-        $this->insert('{{%treasurer_category}}', ['treasurer_category_title' => 'ค่าใช้จ่าย']);
-        $this->insert('{{%treasurer_category}}', ['treasurer_category_title' => 'อื่นๆ']);
+        $this->insert('{{%treasurer_category}}',['treasurer_category_title' => 'เรียกเก็บค่าห้อง',]);
+        $this->insert('{{%treasurer_category}}',['treasurer_category_title' => 'ยอดคงค้าง',]);
+        $this->insert('{{%treasurer_category}}',['treasurer_category_title' => 'ค่าใช้จ่าย',]);
+        $this->insert('{{%treasurer_category}}',['treasurer_category_title' => 'อื่นๆ',]);
     }
 
     public function safeDown()

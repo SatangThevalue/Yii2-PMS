@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230503_083648_create_table_treasurer_type extends Migration
+class m230507_051628_create_table_treasurer_type extends Migration
 {
     public function safeUp()
     {
@@ -19,8 +19,8 @@ class m230503_083648_create_table_treasurer_type extends Migration
             ],
             $tableOptions
         );
-        $this->insert('{{%treasurer_type}}',array('treasurer_type_title' => 'รายรับ' ));
-        $this->insert('{{%treasurer_type}}',array('treasurer_type_title' => 'รายจ่าย' ));
+        $this->insert('{{%treasurer_type}}',['treasurer_type_title' => 'รายรับ',]);
+        $this->insert('{{%treasurer_type}}',['treasurer_type_title' => 'รายจ่าย',]);
     }
 
     public function safeDown()

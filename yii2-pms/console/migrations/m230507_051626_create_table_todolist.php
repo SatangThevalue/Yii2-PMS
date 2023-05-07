@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230503_064910_create_table_todolist extends Migration
+class m230507_051626_create_table_todolist extends Migration
 {
     public function safeUp()
     {

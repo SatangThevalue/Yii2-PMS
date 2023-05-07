@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230426_124550_create_table_expenses_type extends Migration
+class m230507_051623_create_table_expenses_type extends Migration
 {
     public function safeUp()
     {
@@ -19,11 +19,9 @@ class m230426_124550_create_table_expenses_type extends Migration
             ],
             $tableOptions
         );
-        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'เงินเดือน'));
-        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'เงินพิเศษ'));
-        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'ค่าห้อง'));
-        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'ค่าอาหาร'));
-        $this->insert('{{%expenses_type}}',array('expenses_category_title' => 'ค่าเดินทาง'));
+        $this->insert('{{%expenses_type}}',['expenses_type_title' => 'รายรับ',]);
+        $this->insert('{{%expenses_type}}',['expenses_type_title' => 'รายจ่าย',]);
+        $this->insert('{{%expenses_type}}',['expenses_type_title' => 'หนี้สิน',]);
     }
 
     public function safeDown()

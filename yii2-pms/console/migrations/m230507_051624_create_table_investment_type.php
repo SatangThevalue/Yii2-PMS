@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230503_054532_create_table_investment_type extends Migration
+class m230507_051624_create_table_investment_type extends Migration
 {
     public function safeUp()
     {
@@ -19,6 +19,9 @@ class m230503_054532_create_table_investment_type extends Migration
             ],
             $tableOptions
         );
+        $this->insert('{{%investment_type}}',['investment_type_title' => 'ประกัน',]);
+        $this->insert('{{%investment_type}}',['investment_type_title' => 'หุ้น',]);
+        $this->insert('{{%investment_type}}',['investment_type_title' => 'กองทุน',]);
     }
 
     public function safeDown()

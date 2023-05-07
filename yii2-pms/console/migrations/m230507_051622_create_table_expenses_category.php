@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230426_124549_create_table_expenses_category extends Migration
+class m230507_051622_create_table_expenses_category extends Migration
 {
     public function safeUp()
     {
@@ -19,18 +19,11 @@ class m230426_124549_create_table_expenses_category extends Migration
             ],
             $tableOptions
         );
-        $this->insert(
-            '{{%expenses_category}}',
-            array(
-                'expenses_category_title' => 'รายรับ'
-            )
-        );
-        $this->insert(
-            '{{%expenses_category}}',
-            array(
-                'expenses_category_title' => 'รายจ่าย'
-            )
-        );
+        $this->insert('{{%expenses_category}}',['expenses_category_title' => 'เงินเดือน',]);
+        $this->insert('{{%expenses_category}}',['expenses_category_title' => 'ค่าเช่าห้อง',]);
+        $this->insert('{{%expenses_category}}',['expenses_category_title' => 'ค่าน้ำ',]);
+        $this->insert('{{%expenses_category}}',['expenses_category_title' => 'ค่าไฟ',]);
+        $this->insert('{{%expenses_category}}',['expenses_category_title' => 'ค่าโทรศัพท์',]);
     }
 
     public function safeDown()

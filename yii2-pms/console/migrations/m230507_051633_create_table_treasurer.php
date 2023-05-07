@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230503_083601_create_table_treasurer extends Migration
+class m230507_051633_create_table_treasurer extends Migration
 {
     public function safeUp()
     {
@@ -18,8 +18,10 @@ class m230503_083601_create_table_treasurer extends Migration
                 'treasurer_note' => $this->text()->notNull()->comment('โน๊ต'),
                 'treasurer_amount' => $this->decimal(10, 2)->notNull()->comment('จำนวนเงิน'),
                 'treasurer_expenses_type_Fk' => $this->integer()->notNull()->comment('รหัสชนิด'),
-                'treasurer_date' => $this->dateTime()->notNull()->defaultExpression('CURRENT_TIMESTAMP')->comment('วันที่ทำธุรกรรม'),
+                'treasurer_date' => $this->dateTime()->notNull()->comment('วันที่ทำธุรกรรม'),
                 'treasurer_category_Fk' => $this->integer()->notNull()->comment('รหัสประเภท'),
+                'create_time' => $this->timestamp()->notNull()->defaultExpression('CURRENT_TIMESTAMP')->comment('สร้างข้อมูลเมื่อ'),
+                'update_time' => $this->timestamp()->notNull()->defaultExpression('CURRENT_TIMESTAMP')->comment('อัพเดทข้อมูลเมื่อ'),
             ],
             $tableOptions
         );
@@ -28,8 +30,8 @@ class m230503_083601_create_table_treasurer extends Migration
             'Fk_treasurer_category',
             '{{%treasurer}}',
             ['treasurer_category_Fk'],
-            '{{%expenses_category}}',
-            ['expenses_category_id'],
+            '{{%treasurer_category}}',
+            ['treasurer_category_id'],
             'CASCADE',
             'CASCADE'
         );

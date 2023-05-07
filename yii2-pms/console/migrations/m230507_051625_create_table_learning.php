@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230503_074208_create_table_learning extends Migration
+class m230507_051625_create_table_learning extends Migration
 {
     public function safeUp()
     {

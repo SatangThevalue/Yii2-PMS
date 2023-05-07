@@ -2,7 +2,7 @@
 
 use yii\db\Migration;
 
-class m230426_124553_create_foreign_keys extends Migration
+class m230507_051634_create_foreign_keys extends Migration
 {
     public function safeUp()
     {
