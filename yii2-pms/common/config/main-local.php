@@ -7,9 +7,9 @@ return [
     'components' => [
         'db' => [
             'class' => \yii\db\Connection::class,
-            'dsn' => 'mysql:host=database;prot=3306;dbname=pms',
+            'dsn' => 'mysql:host=localhost;prot=3306;dbname=pms',
             'username' => 'root',
-            'password' => '123456789',
+            'password' => '',
             'charset' => 'utf8',
         ],
         'mailer' => [

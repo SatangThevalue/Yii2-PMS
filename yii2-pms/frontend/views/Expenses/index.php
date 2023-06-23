@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // TODO(SaTangTheValue): set DateTime type in index
             [
                 'attribute' => 'expenses_category_date',
-                'format' => ['DateTime', 'php:d mm yy'],
+                'format' => ['Date'],
                 'value' => 'expenses_category_date',
             ],
             // TODO(SaTangTheValue): FK expenses type in index

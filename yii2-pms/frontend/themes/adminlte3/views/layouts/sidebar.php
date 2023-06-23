@@ -30,14 +30,32 @@
                 </a></div>
         </div>
         <!-- Sidebar user panel (optional) -->
-        <!--<div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-                <img src="<?= $assetDir ?>/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        <?php
+        if (Yii::$app->user->isGuest) {
+        ?>
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="<?= Yii::$app->request->baseUrl; ?>/img/user.png" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="<?= \yii\helpers\Url::toRoute('site/login') ?>" class="d-block">กรุณาล็อคอิน</a>
+                </div>
             </div>
-            <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+        <?php
+        }else {
+        ?>
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="<?= Yii::$app->request->baseUrl; ?>/img/user.png" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="<?= \yii\helpers\Url::toRoute('site/login') ?>" class="d-block"><?= Yii::$app->user->identity->fname." ".Yii::$app->user->identity->lname ?></a>
+                </div>
             </div>
-        </div>-->
+        <?php
+        }
+        ?>
+
 
         <!-- SidebarSearch Form -->
         <!-- href be escaped -->
@@ -66,16 +84,18 @@
                     ],
                     [
                         'label' => 'Expenses | รายรับรายจ่าย',
+                        'visible' => !Yii::$app->user->isGuest,
                         'icon' => 'money-bill',
                         'items' => [
                             ['label' => 'บันทึกรายรับรายจ่าย', 'url' => ['expenses/index'], 'iconStyle' => 'far'],
                             ['label' => 'ประเภทค่าใช้จ่าย', 'url' => ['expensescategory/index'], 'iconStyle' => 'far'],
-                        ]
+                        ],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
                     ],
                     [
                         'label' => 'Statement | งบการเงิน',
                         'icon' => 'dollar-sign',
+                        'visible' => !Yii::$app->user->isGuest,
                         'url' => ['statement/index'],
                         ##<i class="fad fa-dollar-sign"></i>
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
@@ -83,6 +103,7 @@
                     [
                         'label' => 'Investment | การลงทุน',
                         'icon' => 'hand-holding-usd',
+                        'visible' => !Yii::$app->user->isGuest,
                         ##<i class="fas fa-hand-holding-usd"></i>
                         'items' => [
                             ['label' => 'บันทึกการลงทุน', 'url' => ['investment/index'], 'iconStyle' => 'far'],
@@ -93,6 +114,7 @@
                     [
                         'label' => 'Learning | การเรียน',
                         'icon' => 'graduation-cap',
+                        'visible' => !Yii::$app->user->isGuest,
                         ##<i class="fa-duotone fa-graduation-cap"></i>
                         'url' => ['learning/index'],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
@@ -100,6 +122,7 @@
                     [
                         'label' => 'To Do List | สิ่งที่ต้องทำ',
                         'icon' => 'clipboard-list',
+                        'visible' => !Yii::$app->user->isGuest,
                         ##<i class="fas fa-clipboard-list"></i>
                         'url' => ['todolist/index'],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
@@ -107,6 +130,7 @@
                     [
                         'label' => 'Working | การทำงาน',
                         'icon' => 'briefcase',
+                        'visible' => !Yii::$app->user->isGuest,
                         ##<i class="fa-duotone fa-briefcase"></i>
                         'url' => ['working/index'],
                         ##'badge' => '<span class="right badge badge-danger">New</span>'
@@ -114,6 +138,7 @@
                     [
                         'label' => 'Treasurer | งานเหรัญญิก',
                         'icon' => 'balance-scale',
+                        'visible' => !Yii::$app->user->isGuest,
                         ##<i class="fas fa-balance-scale"></i>
                         //'url' => ['treasurer/index'],
                         'items' => [

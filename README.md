@@ -29,8 +29,8 @@
 ## 🧐 About | เกี่ยวกับโปรเจค <a name = "about"></a>
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/th/thumb/a/af/RMUTTLOGO.png/150px-RMUTTLOGO.png"  width="150" height="275"><br>
-<img src="https://upload.wikimedia.org/wikipedia/th/thumb/6/63/RMUTT-logo-01.png/230px-RMUTT-logo-01.png"  width="229" height="85">
+<img src="./RMUTT-logo-1.png"  width="150" height="275"><br>
+<img src="./RMUTT-logo-2.png"  width="229" height="85">
 
 This Final <b>Project in Specialized Computer Programming ( Code : 09152103 )</b> <br>
 <b>INSTRUCTOR : </b>[Assistant Professor Pongpon Nilaphruek](https://www.linkedin.com/in/pongpon-nilaphruek-01a30335/)<br>
@@ -38,7 +38,7 @@ This Final <b>Project in Specialized Computer Programming ( Code : 09152103 )</b
 <b>FACULTY :</b>	[Science and Technology](https://www.sci.rmutt.ac.th/)<br>
 <b>PROGRAM :</b>	[Big Data Management and Analytics](https://www.bigdata.rmutt.ac.th/) <br>
 
-<img src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/294737392_391632463063442_5752770952954949927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFdsBJs34R9Fhl9LuQwZqbq14dEbj9I16XXh0RuP0jXpbO4NmAXtTf_Mu99cEInhTyyKHpN8DS0quVBQjlZ4E2a&_nc_ohc=-YxxJy3oAwsAX_kFJWP&_nc_ht=scontent.fbkk29-8.fna&oh=00_AfC5Q-4u6WSD175-o1_YSi5o5qnoaG04cQJuNvytcRHZ6A&oe=644714CA"  width="150" height="150">
+<img src="./bigdata-logo.jpg"  width="150" height="150">
 </div>
 
 

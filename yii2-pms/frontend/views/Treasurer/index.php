@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // TODO(SaTangTheValue): set DateTime type in index
             [
                 'attribute' => 'treasurer_date',
-                'format' => ['DateTime', 'php:d mm yy'],
+                'format' => ['Date'],
                 'value' => 'treasurer_date',
             ],
             'treasurer_note:ntext',

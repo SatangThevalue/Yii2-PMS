@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // TODO(SaTangTheValue): set DateTime type in index
             [
                 'attribute' => 'investment_date',
-                'format' => ['DateTime', 'php:d mm yy'],
+                'format' => ['Date'],
                 'value' => 'investment_date',
             ],
             //'investment_type_fk',

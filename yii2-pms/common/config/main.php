@@ -23,12 +23,12 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         // TODO(SaTangTheValue): config redis Connection
-        'redis' => [
+       /*  'redis' => [
             'class' => 'yii\redis\Connection',
             'hostname' => 'redis',
             'port' => 6379,
             'database' => 0,
-        ],
+        ], */
         // TODO(SaTangTheValue): config PrettyUrl
         'urlManager' => [
             'class' => 'yii\web\UrlManager',
@@ -44,13 +44,13 @@ return [
             ),
         ],
         // TODO(SaTangTheValue): config redis Session
-        'session' => [
+/*         'session' => [
             'class' => 'yii\redis\Session',
-        ],
+        ], */
         'cache' => [
             // TODO(SaTangTheValue): Use redis Cache
-            //'class' => \yii\caching\FileCache::class,
-            'class' => 'yii\redis\Cache',
+            'class' => \yii\caching\FileCache::class,
+            /* 'class' => 'yii\redis\Cache', */
         ],
     ],
 ];
